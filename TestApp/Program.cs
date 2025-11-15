@@ -1,15 +1,3 @@
-﻿int[,] array = new int[,] { { -2, 5, -8, 7 }, { -6, -7, 2, -5 }, { 6, 4, -8, 2 }, { 2, -7, 6, -3 } };
-
-int count = 0;
-for (int i = 0; i < array.GetLength(0); i++)
-{
-    for (int j = 0; j < array.GetLength(1); j++)
-    {
-        if (array[i, j] < 0)
-        {
-            count++;
-        }
-    }
-}
-
+﻿string[] names = new string[] { "Anexceii", "Alex", "Alexander" };
+int count = names.Count(n => n.Length > 6);
 Console.WriteLine(count);
